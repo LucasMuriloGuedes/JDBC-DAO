@@ -6,7 +6,7 @@
 package model.entites;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 
 /**
  *
@@ -14,7 +14,7 @@ import java.sql.Date;
  */
 public class Seller implements Serializable {
     
-    private int id;
+    private Integer id;
     private String name;
     private String email;
     private Date birthDate;
@@ -25,7 +25,7 @@ public class Seller implements Serializable {
         
     }    
 
-    public Seller(int id, String name, String email, Date birthDate, double baseSalary, Department departament) {
+    public Seller(Integer id, String name, String email, Date birthDate, double baseSalary, Department departament) {
         this.id = id;
         this.name = name;
         this.email = email;
