@@ -53,11 +53,15 @@ public class Main {
         sellerDao.insert(newSeller);
         System.out.println("Insert! New id = " + newSeller.getId());
         
-        System.out.println("=== TESTE 5: seller insert");
+        System.out.println("=== TESTE 5: seller update");
         seller = sellerDao.findById(1);
         seller.setName("Izabel Cristina");
         sellerDao.update(seller);
         System.out.println("Update completed!");
+        
+        System.out.println("=== TESTE 6: seller update");
+        sellerDao.deleteById(9);
+        System.out.println("Deletado!");
         
         
 
